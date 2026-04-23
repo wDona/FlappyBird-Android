@@ -1,4 +1,7 @@
 package dev.wdona.flappybird.views
 
-class JuegoView {
+import android.content.Context
+import android.view.View
+
+class JuegoView(context: Context) : View(context) {
 }

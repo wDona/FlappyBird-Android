@@ -1,4 +1,7 @@
 package dev.wdona.flappybird.views
 
-class GameOverView {
+import android.content.Context
+import android.view.View
+
+class GameOverView(context: Context) : View(context) {
 }
