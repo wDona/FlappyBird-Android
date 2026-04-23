@@ -1,12 +1,12 @@
-package dev.wdona.flappybird.activities
+package dev.wdona.flappybird
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import dev.wdona.flappybird.R
+import dev.wdona.flappybird.views.MenuView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(MenuView(this))
     }
 }
