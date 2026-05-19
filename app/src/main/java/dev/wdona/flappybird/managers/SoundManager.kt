@@ -75,10 +75,12 @@ object SoundManager {
                 val cantidadMuestras = frecuenciaMuestra * duracionMs / 1000
                 val muestras = ShortArray(cantidadMuestras)
                 val generador = java.util.Random()
+
                 for (i in 0 until cantidadMuestras) {
                     val desvanecimiento = 1f - i.toFloat() / cantidadMuestras
                     muestras[i] = ((generador.nextFloat() * 2f - 1f) * Short.MAX_VALUE * volumen * desvanecimiento).toInt().toShort()
                 }
+
                 val pista = AudioTrack.Builder()
                     .setAudioAttributes(
                         AudioAttributes.Builder()

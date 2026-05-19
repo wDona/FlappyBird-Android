@@ -114,6 +114,7 @@ class JuegoView(
     private fun dibujarFotograma(lienzo: Canvas) {
         val anchoPantalla = lienzo.width.toFloat()
         val altoPantalla = lienzo.height.toFloat()
+
         dibujarEscenario(lienzo)
         dibujarObstaculos(lienzo)
         dibujarPajaro(lienzo)

@@ -54,12 +54,14 @@ class BirdDefault : Dibujable, Soundable {
         lienzo.drawCircle(x + radio * 0.52f, y - radio * 0.25f, radio * 0.12f, pinturaOjo)
 
         pinturaPico.color = Color.rgb(255, 100, 0)
+
         val rutaPico = Path().apply {
             moveTo(x + radio * 0.6f, y - radio * 0.05f)
             lineTo(x + radio * 1.15f, y + radio * 0.08f)
             lineTo(x + radio * 0.6f, y + radio * 0.25f)
             close()
         }
+
         lienzo.drawPath(rutaPico, pinturaPico)
 
         lienzo.restore()

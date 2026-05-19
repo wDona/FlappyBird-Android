@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     private fun mostrarFinJuego(puntuacion: Int) {
         AcelerometroManager.desregistrar(sensorManager)
         LuxManager.desregistrar(sensorManager)
+
         vistaJuego = null
         setContentView(GameOverView(this, puntuacion) { mostrarMenu() })
     }

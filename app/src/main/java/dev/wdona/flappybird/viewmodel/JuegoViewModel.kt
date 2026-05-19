@@ -114,11 +114,13 @@ class JuegoViewModel {
             terminarJuego()
             return true
         }
+
         return false
     }
 
     private fun verificarColisionBordes() {
         val ySuperficie = altoPantalla * 0.88f
+
         if (pajaro.y - 40f > ySuperficie || pajaro.y + 40f < 0f) {
             terminarJuego()
         }
